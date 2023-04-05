@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Portfólio Wilson</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="style.css" type="text/css">
-        </head>
-<!---CSS-->
+  <head>
+      <meta charset="UTF-8">
+      <title>Portfólio Wilson</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+<!--CSS-->
 <style>
 * {
     margin:0;
@@ -19,11 +19,13 @@
 
 :root {
     --bg-color:#1c1c1c;
+    --bg-color2:#2c2c2c;
     --blue-letter:#00ffff;
     --ciano-letter:#0ef;
     --gray-letter:#666666;
     --white_letter:#fffff6;
     --one-letter:#111111;
+    --pink-letter:#ff007f;
 }
 html{
     font-size: 1.2rem;
@@ -77,11 +79,12 @@ header{
 }
 
 .main{
+    color: var(--white_letter);
     display: flex;
     justify-content: center;
     align-items: center;
-    color:var(--white_letter);
     margin-top:10vw;
+    margin-bottom: 5vw;
 }
 
 span{
@@ -91,7 +94,8 @@ span{
     margin-bottom: 2rem;
 }
 .main-content h1{
-    font-size: 3rem;
+    font-size: 3.4rem;
+    font-weight: bold;
 }
 .social a{
     background: transparent;
@@ -132,8 +136,30 @@ span{
     box-shadow:none;
 }
 .home-img img{
-    width: 20vw;
+    width: 25vw;
 }
+.about{
+    color: var(--white_letter);
+    background-color: var(--bg-color2);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about-img img{
+    width: 25vw;
+}
+.about-content{
+    text-align: left;
+}
+.about-content h2{
+    font-size: 3.4rem;
+    font-weight: bold;
+}
+.about-content h3{
+    line-height: 1.2rem;
+    font-size: 1.4rem;
+}
+
 
 @keyframes slideRight{
     0% {
@@ -156,33 +182,43 @@ span{
     }
 }
 </style>
-<!--HTML-->
-<body>
-    <header>
-      <a class="logo">Portfólio</a>
-      <div class="links">
-        <a href="#home" class="active" style="--i:1">Home</a>
-        <a href="#sobre" style="--i:2">Sobre</a>
-        <a href="#portfólio" style="--i:3">Portfólio</a>
-        <a href="#contato" style="--i:4">Contato</a>
+ <body>
+  <header>
+    <a class="logo">Portfólio</a>
+    <div class="links">
+      <a href="#home" class="active" style="--i:1">Home</a>
+      <a href="#about" style="--i:2">Sobre</a>
+      <a href="#portfólio" style="--i:3">Portfólio</a>
+      <a href="#contato" style="--i:4">Contato</a>
+    </div>
+    <i class='bx bx-menu-alt-right' id="menu-icon"></i>
+  </header>
+  <section class="main" id="main">
+    <div class="main-content">
+      <h3>Olá, meu nome é</h3>
+      <h1>Wilson M. Müller</h1>
+      <h2>Eu sou um <span>Desenvolvedor Fullstack</spann></h2>
+      <div class="social">
+        <a href=""><i class='bx bxl-instagram-alt'></i></a>
+        <a href="#"><i class='bx bxs-envelope' ></i></a>
+        <a href="#"><i class='bx bxl-github'></i></a>
+        <a href="#"><i class='bx bxl-linkedin'></i></a>
+        <button href="#" class="btn">Baixar CV</button>
       </div>
-      <i class='bx bx-menu-alt-right' id="menu-icon"></i>
-    </header>
-    <section class="main" id="main">
-      <div class="main-content">
-        <h3>Olá, meu nome é</h3>
-        <h1>Wilson M. Müller</h1>
-        <h2>Eu sou um <span>Desenvolvedor Fullstack</spann></h2>
-        <div class="social">
-          <a href=""><i class='bx bxl-instagram-alt'></i></a>
-          <a href="#"><i class='bx bxs-envelope' ></i></a>
-          <a href="#"><i class='bx bxl-github'></i></a>
-          <a href="#"><i class='bx bxl-linkedin'></i></a>
-          <button href="#" class="btn">Baixar CV</button>
-        </div>
-      </div>
-      <div class="home-img">
-        <img src="https://github.com/IsfetShen/PorfolioWebsite/blob/main/img/iconDiscord.png?raw=true" alt="">
-    </section>
-  </body>
-  </html>
+    </div>
+    <div class="home-img">
+      <img src="https://github.com/IsfetShen/PorfolioWebsite/blob/main/img/iconDiscord.png?raw=true" alt="">
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="https://github.com/IsfetShen/PorfolioWebsite/blob/main/img/iconDiscord.png?raw=true"></img>
+    </div>
+    <div class="about-content">
+      <h2>Sobre <span>Mim</span></h2>
+      <p>Desenvolvedor de sites, bots, integração com banco de dados e SAAS</br>Possuo experiência com as linguagens python, javascript e SQL</p>
+      <a href="#" class="btn">Ler mais</a>
+    </div>
+  </section>
+ </body>
+</html>
