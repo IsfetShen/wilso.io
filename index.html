@@ -8,8 +8,7 @@
       <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
       <link rel="stylesheet" href="style.css" type="text/css">
   </head>
-<!--CSS-->
-<style>
+  <style>
 * {
     margin:0;
     margin-right: 0;
@@ -37,10 +36,10 @@ body{
 }
 
 header{
-    background-color: transparent;
-    position: flex;
+    background-color: var(--bg-color);
+    position: fixed;
     font-weight:600;
-    margin-top:0.5rem; 
+    top:0; 
     left: 0;
     width: 100%;
     align-items: center;
@@ -83,7 +82,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:10vw;
+    margin-top:12vw;
     margin-bottom: 5vw;
 }
 
@@ -139,6 +138,8 @@ span{
     width: 25vw;
 }
 .about{
+    padding-top: 5vw;
+    padding-bottom: 5vw;
     color: var(--white_letter);
     background-color: var(--bg-color2);
     display: flex;
@@ -152,14 +153,16 @@ span{
     text-align: left;
 }
 .about-content h2{
-    font-size: 3.4rem;
+    font-size: 2.4rem;
     font-weight: bold;
 }
 .about-content h3{
     line-height: 1.2rem;
     font-size: 1.4rem;
 }
-
+.about-content p{
+    margin: 1.2rem 0 .8rem;
+}
 
 @keyframes slideRight{
     0% {
@@ -181,12 +184,12 @@ span{
         opacity: 1;
     }
 }
-</style>
+  </style>
  <body>
   <header>
     <a class="logo">Portfólio</a>
     <div class="links">
-      <a href="#home" class="active" style="--i:1">Home</a>
+      <a href="#main" class="active" style="--i:1">Home</a>
       <a href="#about" style="--i:2">Sobre</a>
       <a href="#portfólio" style="--i:3">Portfólio</a>
       <a href="#contato" style="--i:4">Contato</a>
@@ -216,7 +219,7 @@ span{
     </div>
     <div class="about-content">
       <h2>Sobre <span>Mim</span></h2>
-      <p>Desenvolvedor de sites, bots, integração com banco de dados e SAAS</br>Possuo experiência com as linguagens python, javascript e SQL</p>
+      <p>Desenvolvedor de sites, bots, integração com banco de dados e SAAS</br>Possuo experiência com as linguagens python, javascript e SQL.</p>
       <a href="#" class="btn">Ler mais</a>
     </div>
   </section>
