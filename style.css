@@ -3,6 +3,7 @@
     margin-right: 0;
     padding: 0;
     text-decoration: none;
+    font-size: 1.2rem;
 }
 
 :root {
@@ -14,7 +15,6 @@
     --one-letter:#111111;
 }
 html{
-    font-size: 1.2rem;
     overflow-x: hidden;
 }
 
@@ -112,7 +112,6 @@ span{
     padding: 1rem 1rem 1rem 1rem;
     box-shadow: 0 0 20px var(--ciano-letter);
     margin-top: 1rem;
-    font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 0.2rem;
     transition: .5s ease;
@@ -175,7 +174,12 @@ span{
 }
 .services i{
     color: var(--ciano-letter);
+    font-size:3rem;
 }
+.services-box h3{
+    font-size: 1.6rem;
+}
+
 @keyframes slideRight{
     0% {
         transform: translateX(-50vw);
