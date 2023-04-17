@@ -4,6 +4,7 @@
     padding: 0;
     text-decoration: none;
     font-size: 1.2rem;
+    font-family: 'Sarala', sans-serif;
 }
 
 :root {
@@ -137,12 +138,11 @@ span{
 .about-img img{
     width: 25vw;
 }
+.about-content h2{
+    font-size: 1.8rem;
+}
 .about-content{
     text-align: left;
-}
-.about-content h2{
-    font-size: 2.4rem;
-    font-weight: bold;
 }
 .about-content h3{
     line-height: 1.2rem;
@@ -159,11 +159,6 @@ span{
 }
 .services{
     color: var(--gray-letter);
-}
-.services h2{
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 2.4rem;
 }
 .services-container .services-box{
     flex: 1 1 30rem;
@@ -186,7 +181,11 @@ span{
 .services-box h3{
     font-size: 1.6rem;
 }
-
+.heading{
+    font-size: 1.8rem;
+    font: bold;
+    text-align: center;
+}
 
 @keyframes slideRight{
     0% {
