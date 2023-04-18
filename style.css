@@ -193,12 +193,14 @@ span{
 .portfolio{
     background-color: var(--bg-color2);
 }
-.portfolio-container{
-    display: grid;
-    grid-template-columns: repeat();
-}
 .portfolio-layer h2{
     color: var(--ciano-letter);
+}
+.portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap:2.5rem
 }
 
 @keyframes slideRight{
