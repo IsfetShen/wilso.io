@@ -187,6 +187,7 @@ span{
 }
 
 .portfolio{
+    text-align: center;
     background-color: var(--bg-color2);
 }
 .portfolio-layer h2{
@@ -195,13 +196,13 @@ span{
 #img1{
     max-width: 30vw;
 }
+.portfolio-layer i{
+    font-size: 1rem;
+}
 .portfolio-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap:2.5rem
-}
-.bx bx-link-external{
-    font-size: .1rem;
 }
 
 @keyframes slideRight{
