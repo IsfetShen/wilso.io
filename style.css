@@ -180,7 +180,8 @@ span{
 .services-box h3{
     font-size: 1.6rem;
 }
-.heading{
+.portfolio h2{
+    margin-bottom: 2.5rem;
     font-size: 1.8rem;
     font: bold;
     text-align: center;
@@ -190,19 +191,36 @@ span{
     text-align: center;
     background-color: var(--bg-color2);
 }
-.portfolio-layer h2{
-    color: var(--ciano-letter);
+.portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap:2.5rem;
 }
-#img1{
-    max-width: 30vw;
+.portfolio-container .portfolio-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color2);
+    overflow: hidden;
+    display: flex;
+}
+.portfolio-box .portfolio-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--ciano-letter));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.portfolio-box img{
+    max-width: 100%;
 }
 .portfolio-layer i{
     font-size: 1rem;
-}
-.portfolio-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap:2.5rem
 }
 
 @keyframes slideRight{
