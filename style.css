@@ -180,6 +180,9 @@ span{
 .services-box h3{
     font-size: 1.6rem;
 }
+.services h2{
+    text-align: center;
+}
 .portfolio h2{
     margin-bottom: 2.5rem;
     font-size: 1.8rem;
