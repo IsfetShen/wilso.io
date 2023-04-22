@@ -12,7 +12,7 @@
     --blue-letter:#00ffff;
     --ciano-letter:#0ef;
     --gray-letter:#d3d3d3;
-    --white-letter: #ddd;
+    --white-letter: #FFF;
     --one-letter:#111111;
 }
 html{
@@ -75,7 +75,6 @@ header{
 }
 
 span{
-    font-size: 1.8rem;
     color:var(--blue-letter);
 }
 .main-content h3:nth-of-type(2){
@@ -138,7 +137,10 @@ span{
     width: 25vw;
 }
 .about-content h2{
-    font-size: 1.8rem;
+    font-size: 3rem;
+}
+.about-content span{
+    font-size: 3rem;
 }
 .about-content{
     text-align: left;
@@ -181,13 +183,17 @@ span{
     font-size: 1.6rem;
 }
 .services h2{
+    font-size: 3rem;
     text-align: center;
 }
 .portfolio h2{
-    margin-bottom: 2.5rem;
-    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
     font: bold;
     text-align: center;
+}
+.portfolio span{
+    font-size: 3rem;
 }
 
 .portfolio{
@@ -224,20 +230,25 @@ span{
     max-width: 100%;
 }
 .portfolio-layer h4{
-    font-size:2.5rem
+    color: var(--white-letter);
+    font-size:2.4rem
 }
 .portfolio-layer p{
+    color: var(--gray-letter);
     font-size:1.5rem;
     margin: .3rem  0 1rem;
 }
 .portfolio-layer i{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 .portfolio-layer a{
+    background-color: var(--white-letter);
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
 }
 
 @keyframes slideRight{
