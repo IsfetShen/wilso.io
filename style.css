@@ -12,7 +12,7 @@
     --blue-letter:#00ffff;
     --ciano-letter:#0ef;
     --gray-letter:#d3d3d3;
-    --white-letter: #FFF;
+    --white-letter: #FFFF;
     --one-letter:#111111;
 }
 html{
@@ -189,7 +189,6 @@ span{
 .portfolio h2{
     margin-bottom: 2rem;
     font-size: 3rem;
-    font: bold;
     text-align: center;
 }
 .portfolio span{
@@ -225,21 +224,31 @@ span{
     align-items: center;
     flex-direction: column;
     text-align: center;
+    transform: translateY(100%);
+}
+.portfolio-box:hover .portfolio-layer{
+    transform: translateY(0);
+    transition: .5s ease;
 }
 .portfolio-box img{
     max-width: 100%;
+    transition: .5s ease;
+}
+.portfolio-box:hover img{
+    transform: scale(1.1);
 }
 .portfolio-layer h4{
     color: var(--white-letter);
     font-size:2.4rem
 }
 .portfolio-layer p{
-    color: var(--gray-letter);
+    color: var(--white-letter);
     font-size:1.5rem;
     margin: .3rem  0 1rem;
 }
 .portfolio-layer i{
-    font-size: 3rem;
+    color: var(--bg-color2);
+    font-size: 2.5rem;
 }
 .portfolio-layer a{
     background-color: var(--white-letter);
