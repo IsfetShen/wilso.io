@@ -33,6 +33,7 @@ header{
     align-items: center;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 }
 .logo{
     margin-left: 5vw;
@@ -190,6 +191,7 @@ span{
     margin-bottom: 2rem;
     font-size: 3rem;
     text-align: center;
+    font-weight: 600;
 }
 .portfolio span{
     font-size: 3rem;
@@ -259,6 +261,35 @@ span{
     width: 4rem;
     height: 4rem;
 }
+.contact h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 80%;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    color: var(--gray-letter);
+    background-color: var(--bg-color2);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+
+
+
 
 @keyframes slideRight{
     0% {
