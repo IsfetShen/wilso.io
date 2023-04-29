@@ -187,12 +187,6 @@ span{
     font-size: 3rem;
     text-align: center;
 }
-.portfolio h2{
-    margin-bottom: 2rem;
-    font-size: 3rem;
-    text-align: center;
-    font-weight: 600;
-}
 .portfolio span{
     font-size: 3rem;
 }
@@ -261,7 +255,11 @@ span{
     width: 4rem;
     height: 4rem;
 }
-.contact h2{
+.portfolio h2{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+.contact h1{
     text-align: center;
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -291,7 +289,12 @@ span{
 .contact form .input-box input{
     width: 40%;
 }
-
+.contact form textarea{
+    width: 90%;
+    max-width: 88%;
+    max-height: 10rem;
+    resize: none;
+}
 
 
 @keyframes slideRight{
