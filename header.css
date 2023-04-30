@@ -1,0 +1,35 @@
+
+header{
+    background-color: var(--bg-color);
+    position: fixed;
+    font-weight:600;
+    top:0; 
+    left: 0;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+.logo{
+    margin-left: 5vw;
+    position: flex;
+    color:var(--blue-letter);
+    font-size: 3rem;
+    cursor: default;
+    animation: slideRight 1s ease forwards;
+}
+.links a{
+    color:var(--gray-letter);
+    position: flex;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-right: 2vw;
+    animation: slideTop 4s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    opacity: 0;
+}
+.links a:hover,
+.links a.active{
+    color:var(--blue-letter);
+}

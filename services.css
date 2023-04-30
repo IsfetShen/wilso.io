@@ -1,0 +1,34 @@
+.services-container{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    gap:2rem
+}
+.services{
+    color: var(--gray-letter);
+}
+.services-container .services-box{
+    flex: 1 1 30rem;
+    flex-wrap: nowrap;
+    background-color: var(--bg-color2);
+    padding: 3rem 2rem 3rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color2);
+    transition: .5s ease;
+}
+.services-container .services-box:hover{
+    border-color: var(--blue-letter);
+    transform: scale(1.02);
+}
+.services i{
+    color: var(--ciano-letter);
+    font-size:3rem;
+}
+.services-box h3{
+    font-size: 1.6rem;
+}
+.services h2{
+    font-size: 3rem;
+    text-align: center;
+}

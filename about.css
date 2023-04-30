@@ -1,0 +1,28 @@
+.about{
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    color: var(--gray-letter);
+    background-color: var(--bg-color2);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about-img img{
+    width: 25vw;
+}
+.about-content h2{
+    font-size: 3rem;
+}
+.about-content span{
+    font-size: 3rem;
+}
+.about-content{
+    text-align: left;
+}
+.about-content h3{
+    line-height: 1.2rem;
+    font-size: 1.4rem;
+}
+.about-content p{
+    margin: 1.2rem 0 .8rem;
+}

@@ -1,0 +1,115 @@
+* {
+    margin:0;
+    margin-right: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Sarala', sans-serif;
+}
+
+:root {
+    --bg-color:#1c1c1c;
+    --bg-color2:#2c2c2c;
+    --blue-letter:#00ffff;
+    --ciano-letter:#0ef;
+    --gray-letter:#d3d3d3;
+    --white-letter: #FFFF;
+    --one-letter:#111111;
+}
+html{
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-color);
+}
+
+#menu-icon{
+    font-size: 3rem;
+    color: var(--gray-letter);
+    display: none;
+}
+#menu-icon:hover{
+    color: var(--ciano-letter);
+}
+
+.main{
+    color: var(--gray-letter);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:12vw;
+    margin-bottom: 5vw;
+}
+
+span{
+    color:var(--blue-letter);
+}
+.main-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+.main-content h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.social a{
+    background: transparent;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border:0.2rem solid var(--blue-letter);
+    color:var(--blue-letter);
+    border-radius:50%;
+    font-size: 1rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    transition: .7s;
+}
+.social a:hover{
+    background: var(--ciano-letter);
+    color:var(--bg-color);
+    box-shadow: 0 0 2rem var(--ciano-letter);
+}
+.btn{
+    background:var(--ciano-letter);
+    color:var(--one-letter);
+    box-shadow:var(--ciano-letter);
+    display: inline-block;
+    border-radius: 2rem;
+    padding: 1rem 1rem 1rem 1rem;
+    box-shadow: 0 0 20px var(--ciano-letter);
+    margin-top: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    transition: .5s ease;
+}
+.btn:hover{
+    box-shadow:none;
+}
+.home-img img{
+    padding-left: 5vw;
+    width: 25vw;
+}
+
+
+@keyframes slideRight{
+    0% {
+        transform: translateX(-50vw);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideTop{
+    0% {
+        transform: translateY(100vw);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
