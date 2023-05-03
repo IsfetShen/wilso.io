@@ -7,17 +7,18 @@
     justify-content: space-evenly;
     align-items: center;
 }
+.home-img img{
+    padding-left: 5vw;
+    width: 25vw;
+}
 .about-img img{
     width: 25vw;
 }
-.about-content h2{
-    font-size: 3rem;
-}
-.about-content span{
-    font-size: 3rem;
-}
 .about-content{
     text-align: left;
+}
+.about-content h2{
+    font-size: 3rem;
 }
 .about-content h3{
     line-height: 1.2rem;

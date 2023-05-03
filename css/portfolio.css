@@ -1,7 +1,7 @@
-.portfolio span{
+.portfolio h2{
+    color: var(--gray-letter);
     font-size: 3rem;
 }
-
 .portfolio{
     text-align: center;
     background-color: var(--bg-color2);
@@ -65,8 +65,4 @@
     border-radius: 50%;
     width: 4rem;
     height: 4rem;
-}
-.portfolio h2{
-    margin-bottom: 2rem;
-    font-size: 3rem;
 }
